@@ -17,6 +17,9 @@
       <dt>Image url</dt>
       <dd><img src="<%= @actor.image_url %>">"</dd>
 
+      <dt>Character count</dt>
+      <dd><%= @actor.characters.count %></dd>
+
     </dl>
 
     <div class="btn-group btn-group-justified">
@@ -56,7 +59,7 @@
 
       <!-- Label and input for actor_id -->
 
-        <input type="hidden" name="actor_id" value="<%= @character.actor_id %>">
+        <input type="hidden" name="actor_id" value="<%= @actor.id %>">
 
       <!-- Label and input for name -->
       <div class="form-group">
